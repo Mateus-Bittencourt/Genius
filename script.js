@@ -65,13 +65,14 @@ let click = (color) => {
 
 //funcao que retorna a cor
 let createColorElement = (color) => {
-    if (color == 0) {
+    switch (color) {
+    case 0 :
         return green;
-    } else if (color == 1) {
+    case 1 :
         return red;
-    } else if (color == 2) {
+    case 2 :
         return yellow;
-    } else if (color == 3) {
+    case 3 :
         return blue;
     }
 }
